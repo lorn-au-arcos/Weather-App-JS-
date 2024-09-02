@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cssMediaQueries.css" />
+  </head>
+  <body>
+    <!-- Header Part -->
+    <header class="centered-header">Weather App</header>
+    <!-- Card for main body -->
+    <div class="flex-container">
+      <div class="card">
+        <div class="search">
+          <input type="text" placeholder="Enter the city" spellcheck="false" />
+          <button><img src="images/search.png" /></button>
+        </div>
+        <div class="weather">
+          <img src="images/rain.png" class="weather_icon" />
+          <img src="images/no.png" class="noImage" />
+          <h1 class="temp">22℃</h1>
+          <h2 class="city">New Delhi</h2>
+          <div class="details">
+            <div class="col">
+              <img src="images/humidity.png" />
+              <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="images/wind.png" />
+              <div>
+                <p class="wind">15km/h</p>
+                <p>wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-bottom">
+      API from Open Weather. copyright 2024 ioNext.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
